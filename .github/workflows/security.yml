@@ -28,6 +28,6 @@ jobs:
         if: always()
         run: |
           docker run --rm -v "${{ github.workspace }}:/repo" aquasec/trivy:latest \
-            fs --scanners vuln --exit-code 0 /repo
+            fs --scanners vuln --exit-code 1 /repo
 
             
