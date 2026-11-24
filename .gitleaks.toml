@@ -1,0 +1,10 @@
+title = "Module 12 Security Rules"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "planted-aws-example"
+description = "Detect planted AWS example key"
+regex = '''AKIAIOSFODNN7EXAMPLE'''
+
